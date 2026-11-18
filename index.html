@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
@@ -10,36 +12,58 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-   <!-- Bootstrap FIRST, then custom styles -->
+  <!-- Bootstrap FIRST, then custom styles -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-   <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Bento grid</title>
 
 </head>
+
 <body>
-  <main class="container">
-   
-      Social Media 10x Faster with AI
-      Over 4,000 5-star reviews
+  <main class="container bento-container py-4 py-xl-5">
+    <div class="row gx-4 gy-4 gy-xl-0">
+      <div class="col-12 col-xl-9 order-1 order-xl-2">
+        <!-- Right section with six cards -->
+      </div>
 
-      Manage multiple accounts and platforms.
+      <div class="col-12 col-xl-3 order-2 order-xl-1">
+        <!-- Left section with two cards -->
+        <div class="d-flex flex-column flex-md-row flex-xl-column gap-4 left-stack">
+          <article class="card-create flex-fill">
 
-      Maintain a consistent posting schedule.
+            <div class="card h-100 p-4 d-flex flex-column justify-content-center">
 
-      Schedule to social media.
-      Optimize post timings to publish content at the perfect time for your audience.
-      
-      Grow followers with non-stop content.
+              <h2 class="text-preset-2">
+                Create and schedule content
+                <em>quicker.</em>
+              </h2>
 
-      >56% faster audience growth
-      
-      Create and schedule content quicker.
+              <img src="./assets/images/illustration-create-post.webp" alt="Create Post illustration" class="img-fluid">
 
-      Write your content using AI.
-    
+            </div>
+          </article>
+
+          <article class="card-ai flex-fill">
+
+            <div class="card h-100 p-4 d-flex flex-column justify-content-between">
+
+              <h2 class="text-preset-2">Write your content using AI.</h2>
+
+              <img src="./assets/images/illustration-ai-content.webp" alt="AI content writing illustration"
+                class="img-fluid">
+
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+
+    </div>
   </main>
-   
+
 </body>
+
 </html>

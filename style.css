@@ -1,0 +1,97 @@
+
+/* ========================================
+   BENTO GRID - BOOTSTRAP 5 PROJECT
+   Frontend Mentor SBA3
+======================================== */
+
+/* 1. COLOR VARIABLES */
+
+:root {
+  --purple-100: #dbd1fc;
+  --purple-500: #7551dc;
+  --yellow-100: #f9eee2;
+  --yellow-500: #ffcc6a;
+  --ink: #121212;
+  --page-bg: #f5f5f5;
+}
+
+/* 2. BODY STYLES */
+
+body {
+  background-color: var(--page-bg);
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+}
+
+/* 3. MAIN CONTAINER */
+
+.bento-container {
+  max-width: 1150px;
+}
+
+/* 4. COMMON CARD STYLES */
+
+.bento-container .card {
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  gap: 16px;
+}
+
+/* Remove default heading and paragraph margins */
+
+.bento-container h1,
+.bento-container h2,
+.bento-container p {
+  margin: 0;
+}
+
+/* Common card headings */
+
+.bento-container h2 {
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+/* Figma Text Preset 2 */
+
+.bento-container h2.text-preset-2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: -2px;
+}
+
+/* Responsive images */
+
+.bento-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ========================================
+   11. CREATE CONTENT CARD
+======================================== */
+
+.card-create .card {
+  background-color: var(--yellow-100);
+}
+
+/* Purple italic word */
+
+.card-create em {
+  color: var(--purple-500);
+}
+
+/* ========================================
+   12. AI CONTENT CARD
+======================================== */
+
+.card-ai .card {
+  background-color: var(--yellow-500);
+}
