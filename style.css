@@ -450,19 +450,35 @@ body {
   /*  Main desktop layout */
   .left-stack,
   .right-stack {
-    height: 720px;
+    height: 760px;
   }
 
-  /* Left section */
+  /* Left Section */
+  /* First card: slightly taller */
   .create-card {
-    height: 280px;
-    flex: 0 0 280px;
+    height: 320px;
+    flex: 0 0 320px;
+    gap: 16px !important;
   }
 
+  .create-card h2,
+  .ai-card h2 {
+    font-size: 40px;
+    line-height: 0.90;
+    letter-spacing: -2px;
+  }
+
+  /* taller second card */
   .ai-card {
     height: 416px;
     flex: 0 0 416px;
   }
+
+  .create-image {
+    max-width: 190px;
+  }
+
+
 
   /*  Right section */
   .top-section {
@@ -470,9 +486,10 @@ body {
     flex: 0 0 494px;
   }
 
+  /* Right bottom section */
   .bottom-section {
-    height: 202px;
-    flex: 0 0 202px;
+    height: 242px;
+    flex: 0 0 242px;
     margin-top: 0 !important;
   }
 
