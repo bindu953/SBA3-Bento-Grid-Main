@@ -1,5 +1,16 @@
-/* Only Figma-specific overrides. Bootstrap supplies the grid, flex, spacing,
-   card component, responsive ordering, rounded corners, and most sizing. */
+/* ==========================================
+   Bento Grid - Frontend Mentor
+   Design and Development SBA
+
+   Bootstrap 5 is used for the layout,
+   spacing, alignment, and responsive design.
+   Custom CSS is used to match the Figma design.
+   ========================================== */
+
+
+/* ------------------------------------------
+   1. Colors used in the Figma design
+   ------------------------------------------ */
 :root {
   --purple-100: #dbd1fc;
   --purple-500: #7551dc;
@@ -7,17 +18,23 @@
   --yellow-500: #ffcc6a;
 }
 
-/* Figma font and card headline treatment. */
+/* ------------------------------------------
+   2. General page and card styles
+   ------------------------------------------ */
+
+/* Apply DM Sans font to the webpage */
 body {
   font-family: 'DM Sans',
     sans-serif;
 
 }
 
+/* Hide parts of images that extend outside cards */
 .card {
   overflow: hidden;
 }
 
+/* Common heading styles for all cards */
 .card h2 {
   font-size: clamp(1.5rem, 2.2vw, 2rem);
   line-height: .96;
@@ -25,16 +42,20 @@ body {
   font-weight: 500;
 }
 
+/* Set spacing between lines in paragraphs */
 .card p {
   line-height: 1.2;
 }
 
+
+/* Heading style for Create Post and AI Content */
 .card h2.card-preset2 {
   font-size: 40px;
   line-height: 0.9;
   letter-spacing: -2px;
 }
 
+/* Larger heading for the main Social Media card */
 .hero-card h2 {
   max-width: 520px;
   font-size: clamp(42px, 3.8vw, 62px);
@@ -42,86 +63,103 @@ body {
   letter-spacing: -3px;
 }
 
+/* Review text below the five stars */
 .hero-card p {
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: 0px;
 }
 
-/* .platforms-card h2{
-     font-size: 32px;
-    line-height: 0.875;
-    letter-spacing: -2px;
- } */
 
-/* Exact colors from the challenge; Bootstrap has no matching named utilities. */
+/* ------------------------------------------
+   3. Background colors for the cards
+   ------------------------------------------ */
+
+/* Light cream background for Create Post */
 .create-card {
   background: var(--yellow-100);
 }
 
+/* Yellow background for AI and Consistent Schedule */
 .ai-card,
 .consistent-card {
   background: var(--yellow-500);
 }
 
+/* Purple background with white text */
 .hero-card,
 .followers-card {
   background: var(--purple-500);
   color: #fff;
 }
 
+/* Light purple background for Schedule */
 .schedule-card {
   background: var(--purple-100);
 }
 
+/* White background for Platforms and Audience */
 .platforms-card,
 .audience-card {
   background: #fff;
 }
 
+/* Purple color for the word "quicker" */
 .create-card em {
   color: var(--purple-500);
 }
 
+/* Yellow color for "10x" */
 .hero-card h2 span {
   color: var(--yellow-500);
 }
 
+/* Font weight for the italic hero text */
 .hero-card h2 em {
   font-weight: 400;
 }
 
-/* Image sizes/overflow reproduce the supplied illustrations' Figma crops. */
+/* ------------------------------------------
+   4. Image sizes
+   ------------------------------------------ */
+
+/* Create Post illustration */
 .create-image {
   width: 100%;
   max-width: 210px;
 }
 
+/* AI Content illustration */
 .ai-image {
   width: 100%;
   max-width: 240px;
 }
 
+/* Five stars illustration */
 .stars-image {
   width: 190px;
 }
 
+/* Schedule chart - extra width allows cropping */
 .schedule-image {
   width: 150%;
   max-width: none;
 }
 
+/* Platforms image - wider than the card for Figma effect */
 .platforms-image {
   display: block;
   width: 150%;
   max-width: none;
 }
 
+/* Consistent posting calendar */
 .consistent-image {
   display: block;
   width: 100%;
 }
 
+/* Audience growth percentage and illustration */
 .audience-card h2 {
   font-size: 3.5rem;
 }
@@ -137,14 +175,14 @@ body {
   flex-shrink: 0;
 }
 
+/* Grow Followers image and heading */
 .followers-card h2 {
   font-size: clamp(1.6rem, 2.6vw, 2.6rem);
 }
 
-/* Small screens: let Bootstrap stack the cards in the intended reading order. */
-
-
-/* MOBILE LAYOUT — BELOW 768px */
+/* ==========================================
+   5. MOBILE VIEW - BELOW 768px
+   ========================================== */
 @media (max-width: 767.98px) {
 
   /* All sections grow naturally on mobile */
@@ -215,7 +253,9 @@ body {
   }
 }
 
-/* TABLET VIEW — 768px to 1199.98px */
+/* ==========================================
+   6. TABLET VIEW - 768px TO 1199px
+   ========================================== */
 @media (min-width: 768px) and (max-width: 1199.98px) {
 
   /* Allow sections to grow naturally */
@@ -444,7 +484,10 @@ body {
 }
 
 
-/* DESKTOP VIEW — 1200px and above */
+/* ==========================================
+   7. DESKTOP VIEW - 1200px AND ABOVE
+   ========================================== */
+
 @media (min-width: 1200px) {
 
   /*  Main desktop layout */
