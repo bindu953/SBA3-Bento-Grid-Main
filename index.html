@@ -6,16 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Frontend Mentor Bento Grid recreated with Bootstrap 5.">
   <title>Frontend Mentor | Bento Grid</title>
+
+   <!-- Website favicon -->
   <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
 
-  <!-- Font from the Frontend Mentor style guide -->
+  <!-- Google Font - DM Sans Font from the Frontend Mentor style guide  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400;1,9..40,500&display=swap"
     rel="stylesheet">
 
-  <!-- Bootstrap first; small Figma-specific overrides second -->
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
@@ -27,16 +29,21 @@
 </head>
 
 <body class="bg-body-tertiary">
+
+    <!-- Main container for the Bento Grid -->
   <main class="container-xxl py-4 py-xl-5" aria-label="Social media tools bento grid">
+
     <h1 class="visually-hidden">Social media tools and benefits</h1>
 
+    <!-- Main Bootstrap row for the left and right sections -->
     <!-- Bootstrap 12-column outer row: 3 + 9 on desktop -->
     <div class="row g-4 align-items-stretch">
 
-      <!-- LEFT STACK: moves below the others on mobile/tablet -->
+      <!-- Left section - Create Post and AI Content cards -->
       <div class="col-12 col-xl-3 order-2 order-xl-1">
         <div class="d-flex flex-column flex-md-row flex-xl-column gap-4 left-stack">
 
+          <!-- Create Post card -->
           <article class="card create-card border-0 rounded-3 p-4 d-flex flex-column justify-content-center gap-4">
             <h2 class="card-preset2 mb-0">
               Create and<span class="d-none d-xl-block"></span>
@@ -48,8 +55,8 @@
               alt="Create Post button">
           </article>
 
+          <!-- AI Content card -->
           <article class="card ai-card border-0 rounded-3 p-4 d-flex flex-column justify-content-between gap-4">
-
             <h2 class="card-preset2 mb-0">
               Write your<span class="d-none d-xl-block"></span>
               content<span class="d-none d-xl-block"></span>
@@ -61,16 +68,19 @@
         </div>
       </div>
 
-      <!-- RIGHT SIDE: nine Bootstrap columns on desktop -->
+      <!-- Right section - Contains the remaining six cards -->
       <div class="col-12 col-xl-9 order-1 order-xl-2">
 
         <div class="d-flex flex-column gap-4 right-stack">
 
-          <!-- Top: central content (8/12) + tall schedule card (4/12) -->
+          <!-- Top section - Hero, middle cards and Schedule card -->
           <div class="row gx-4 gy-4 gy-xl-0 top-section">
+
+            <!-- Center section -->
             <div class="col-12 col-xl-8">
               <div class="d-flex flex-column gap-4 h-100">
 
+                <!-- Social Media Hero card -->
                 <section
                   class="card hero-card border-0 rounded-3 p-4 text-center d-flex flex-column align-items-center justify-content-center gap-2"
                   aria-labelledby="hero-title">
@@ -82,12 +92,10 @@
                   <p class="mb-0 small">Over 4,000 5-star reviews</p>
                 </section>
 
-                <!-- Bootstrap half-width cards from tablet upward -->
-
-                <!-- Middle Row -->
+                <!-- Middle row - Two cards side by side on tablet and desktop -->
                 <div class="row gx-4 gy-4 gy-xl-0 middle-row">
 
-                  <!-- Manage Multiple Accounts -->
+                  <!-- Manage Multiple Accounts Card -->
                   <div class="col-12 col-md-6 d-flex">
                     <article class="card platforms-card border-0 rounded-3 p-4 w-100 d-flex flex-column gap-3">
 
@@ -101,7 +109,7 @@
                     </article>
                   </div>
 
-                  <!-- Consistent Schedule -->
+                  <!-- Consistent Schedule Card -->
                   <div class="col-12 col-md-6 d-flex">
                     <article class="card consistent-card border-0 rounded-3 p-4 w-100 d-flex flex-column gap-3">
 
@@ -121,6 +129,7 @@
               </div>
             </div>
 
+            <!-- Schedule to Social Media card -->
             <div class="col-12 col-xl-4">
               <article class="card schedule-card border-0 rounded-3 p-4 h-100 d-flex flex-column gap-3">
                 <h2 class="card-title mb-0">Schedule to social media.</h2>
@@ -132,12 +141,10 @@
             </div>
           </div>
 
-          <!-- Bottom: 4 + 8 columns, with followers first on smaller screens -->
-
-          <!-- Bottom Section -->
+          <!-- Bottom section - Audience Growth and Grow Followers -->
           <div class="row gx-4 gy-4 gy-xl-0 bottom-section">
 
-            <!-- Audience Growth -->
+            <!-- Audience Growth Card -->
             <div class="col-12 col-xl-4 order-2 order-xl-1">
 
               <article class="card audience-card border-0 rounded-3 p-4 h-100 d-flex flex-column">
@@ -152,7 +159,7 @@
               </article>
             </div>
 
-            <!-- Grow Followers -->
+            <!-- Grow Followers Card-->
             <div class="col-12 col-xl-8 order-1 order-xl-2">
 
               <article
