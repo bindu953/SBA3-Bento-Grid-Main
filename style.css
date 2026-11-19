@@ -549,9 +549,9 @@ body {
   }
 
   .platforms-card h2 {
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: -1px;
+    font-size: 32px;
+    line-height: 0.875;
+    letter-spacing: -2px;
   }
 
   /* Consistent Schedule */
@@ -561,9 +561,9 @@ body {
   }
 
   .consistent-card h2 {
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: -1px;
+    font-size: 32px;
+    line-height: 0.875;
+    letter-spacing: -2px;
   }
 
   .consistent-image {
@@ -581,13 +581,15 @@ body {
   }
 
   .schedule-card h2 {
-    font-size: 24px;
-    line-height: 1;
+    font-size: 32px;
+    line-height: 0.875;
+    letter-spacing: -2px;
   }
 
   .schedule-card p {
-    font-size: 16px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: 0px;
   }
 
   .schedule-image {
@@ -604,14 +606,15 @@ body {
   }
 
   .audience-card h2 {
-    font-size: 48px;
-    line-height: 1;
-    letter-spacing: -2px;
+    font-size: 62px;
+    line-height: 0.935;
+    letter-spacing: -3px;
   }
 
   .audience-card p {
-    font-size: 14px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.11;
+     letter-spacing: 0px;
   }
 
   .audience-image {
@@ -635,9 +638,9 @@ body {
   }
 
   .followers-card h2 {
-    font-size: 26px;
-    line-height: 1;
-    letter-spacing: -1px;
+    font-size: 40px;
+    line-height: 0.90;
+    letter-spacing: -2px;
     max-width: 270px;
   }
 }
